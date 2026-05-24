@@ -1,0 +1,47 @@
+/* DASHBOARD */
+
+.dashboard{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    padding:50px;
+}
+
+/* CARDS */
+
+.card{
+
+    flex:1;
+
+    min-width:300px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+}
+
+/* AVATAR */
+
+.avatar{
+
+    width:100px;
+
+    border-radius:50%;
+
+    margin-bottom:15px;
+}
+
+/* TITULOS */
+
+.card h2{
+
+    margin-bottom:20px;
+}
