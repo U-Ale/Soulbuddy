@@ -1,0 +1,38 @@
+.bot,
+.user{
+
+    padding:10px;
+
+    margin:10px 0;
+
+    border-radius:10px;
+
+    animation:fadeIn 0.3s ease;
+}
+
+.bot{
+
+    background:#22c55e;
+}
+
+.user{
+
+    background:#3b82f6;
+
+    text-align:right;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+
+        transform:translateY(10px);
+    }
+
+    to{
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
