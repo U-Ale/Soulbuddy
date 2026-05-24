@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+
+    /* ===== TOP BAR ===== */
+
+.top-bar{
+
+    padding:20px;
+}
+
+/* ===== BOTÃO ===== */
+
+.exit-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ef4444,
+        #dc2626
+    );
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+    box-shadow:
+    0 0 10px rgba(239,68,68,0.4);
+}
+
+/* HOVER */
+
+.exit-btn:hover{
+
+    transform:
+    translateY(-3px)
+    scale(1.03);
+
+    box-shadow:
+    0 0 20px rgba(239,68,68,0.7);
+}
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #111827,
+        #0b1120
+    );
+
+    color:white;
+
+    font-family:Arial, sans-serif;
+
+    min-height:100vh;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    padding:50px;
+}
+
+/* CARDS */
+
+.card{
+
+    flex:1;
+
+    min-width:300px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+}
+
+/* AVATAR */
+
+.avatar{
+
+    width:100px;
+
+    border-radius:50%;
+
+    margin-bottom:15px;
+}
+
+/* TITULOS */
+
+.card h2{
+
+    margin-bottom:20px;
+}
+
+/* RANKING */
+
+.ranking p{
+
+    margin:10px 0;
+}
+
+/* MISSÕES */
+
+.missions li{
+
+    margin:10px 0;
+
+    list-style:none;
+}
+
+/* PROGRESSO */
+
+.progress{
+
+    width:100%;
+
+    height:20px;
+
+    background:#1e293b;
+
+    border-radius:20px;
+
+    margin-top:20px;
+}
+
+.bar{
+
+    width:75%;
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #22c55e,
+        #3b82f6
+    );
+
+    animation:grow 2s ease;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes grow{
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:75%;
+    }
+}
+
+
+@media(max-width:768px){
+
+    .dashboard{
+
+        flex-direction:column;
+    }
+}
+
+
+/*Compatibilidade com celular*/
+
+
+@media(max-width:768px){
+
+    .chat-container{
+
+        width:95%;
+
+        margin:20px auto;
+
+        padding:15px;
+    }
+
+    #chat{
+
+        height:350px;
+    }
+
+    .input-area{
+
+        flex-direction:column;
+    }
+
+    input{
+
+        width:100%;
+    }
+
+    button{
+
+        width:100%;
+    }
+
+    .bot,
+    .user{
+
+        max-width:100%;
+    }
+
+    .top-bar{
+
+        flex-direction:column;
+
+        gap:10px;
+    }
+
+    .exit-btn{
+
+        width:100%;
+
+        text-align:center;
+    }
+}

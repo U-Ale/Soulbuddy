@@ -1,0 +1,724 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #111827,
+        #0b1120
+    );
+
+    color:white;
+
+    font-family:Arial, sans-serif;
+
+    min-height:100vh;
+}
+
+
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 50px;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(10px);
+}
+
+
+
+.logo{
+
+    color:#22c55e;
+
+    text-shadow:
+    0 0 10px #22c55e,
+    0 0 20px #22c55e;
+}
+
+
+
+.menu{
+
+    display:flex;
+
+    gap:20px;
+
+    list-style:none;
+}
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.menu a:hover{
+
+    color:#22c55e;
+}
+
+
+
+.hero{
+
+    height:80vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.hero h2{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+}
+
+.hero p{
+
+    margin-bottom:30px;
+
+    font-size:18px;
+}
+
+
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        90deg,
+        #22c55e,
+        #3b82f6
+    );
+
+    transition:0.3s;
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+}
+
+
+
+.cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    padding:60px 20px;
+}
+
+.card{
+
+    width:300px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    transition:0.3s;
+
+    animation:fade 1s ease;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+}
+
+
+
+.avatar{
+
+    width:100px;
+
+    border-radius:50%;
+
+    margin-bottom:15px;
+}
+
+
+
+.sobre{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:stretch;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    padding:80px 20px;
+}
+
+
+
+.sobre .card{
+
+    width:320px;
+
+    min-height:260px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    transition:0.3s;
+
+    box-shadow:
+    0 0 15px rgba(255,255,255,0.05);
+}
+
+
+
+.sobre .card:hover{
+
+    transform:
+    translateY(-10px)
+    scale(1.02);
+
+    box-shadow:
+    0 0 20px rgba(34,197,94,0.3);
+}
+
+
+
+.sobre .card h2{
+
+    color:#22c55e;
+
+    margin-bottom:20px;
+
+    font-size:28px;
+}
+
+
+
+.sobre .card p{
+
+    line-height:1.7;
+
+    color:#e5e7eb;
+}
+
+
+.nomes{
+
+    text-align:center;
+
+    padding:50px 20px;
+}
+
+
+
+.nomes h2{
+
+    font-size:35px;
+
+    margin-bottom:40px;
+
+    color:#22c55e;
+}
+
+/* CONTAINER NOMES */
+
+.nomes-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+
+
+.nome-card{
+
+    width:250px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    transition:0.3s;
+
+    box-shadow:
+    0 0 15px rgba(255,255,255,0.05);
+}
+
+
+
+.nome-card:hover{
+
+    transform:
+    translateY(-8px)
+    scale(1.03);
+
+    box-shadow:
+    0 0 20px rgba(59,130,246,0.4);
+}
+
+/* NOME */
+
+.nome-card h3{
+
+    margin-bottom:10px;
+
+    color:#3b82f6;
+}
+
+/* TEXTO */
+
+.nome-card p{
+
+    color:#d1d5db;
+}
+
+/* FAQ */
+
+.faq{
+
+    padding:50px 20px;
+}
+
+.faq h2{
+
+    margin-bottom:30px;
+}
+
+.faq-item{
+
+    margin-bottom:20px;
+}
+
+.faq-question{
+
+    width:100%;
+
+    padding:20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.08);
+
+    color:white;
+
+    text-align:left;
+
+    cursor:pointer;
+}
+
+.faq-answer{
+
+    display:none;
+
+    padding:20px;
+
+    margin-top:10px;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.03);
+}
+
+.show{
+
+    display:block;
+}
+
+/* CONTATO */
+
+.contato{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:80px 20px;
+}
+
+.contato-card{
+
+    width:500px;
+}
+
+/* FORM */
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    margin-top:20px;
+}
+
+input,
+textarea{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.08);
+
+    color:white;
+}
+
+textarea{
+
+    height:120px;
+
+    resize:none;
+}
+
+
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:50px;
+
+    background:rgba(255,255,255,0.05);
+}
+
+
+
+.dark{
+
+    background:white;
+
+    color:black;
+}
+
+
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:20px;
+    }
+
+    .hero h2{
+
+        font-size:35px;
+    }
+
+    .cards,
+    .sobre,
+    .nomes-container{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+    .sobre .card,
+    .nome-card{
+
+        width:90%;
+    }
+}
+
+/* Uso em Celular */
+
+
+@media(max-width:768px){
+
+   
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+    }
+
+   
+
+    .menu{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        width:100%;
+    }
+
+    
+
+    .hero{
+
+        height:auto;
+
+        padding:80px 20px;
+    }
+
+    .hero h2{
+
+        font-size:35px;
+
+        line-height:1.2;
+    }
+
+    .hero p{
+
+        font-size:16px;
+    }
+
+   
+
+    .cards{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        padding:40px 20px;
+    }
+
+    .card{
+
+        width:100%;
+    }
+
+    
+
+    .sobre{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        padding:40px 20px;
+    }
+
+    .sobre .card{
+
+        width:100%;
+    }
+
+    
+
+    .nomes-container{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+    .nome-card{
+
+        width:100%;
+    }
+
+    
+
+    .faq{
+
+        padding:30px 20px;
+    }
+
+
+
+    .contato{
+
+        padding:40px 20px;
+    }
+
+    .contato-card{
+
+        width:100%;
+    }
+
+
+
+    input,
+    textarea{
+
+        width:100%;
+    }
+
+
+
+    .btn{
+
+        width:100%;
+
+        text-align:center;
+    }
+
+
+
+    footer{
+
+        padding:20px;
+    }
+}
+
+/* ===== LINKS SOCIAIS ===== */
+
+.social-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-top:20px;
+}
+
+/* BOTÕES */
+
+.social-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:10px 15px;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    transition:0.3s;
+
+    background:
+    linear-gradient(
+        90deg,
+        #22c55e,
+        #3b82f6
+    );
+}
+
+/* HOVER */
+
+.social-links a:hover{
+
+    transform:
+    translateY(-3px)
+    scale(1.05);
+
+    box-shadow:
+    0 0 15px rgba(59,130,246,0.5);
+}
+/* ===== EMAIL CONTATO ===== */
+
+.email-info{
+
+    margin-bottom:25px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,0.08);
+
+    color:#22c55e;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    box-shadow:
+    0 0 10px rgba(34,197,94,0.2);
+}

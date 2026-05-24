@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #111827,
+        #0b1120
+    );
+
+    color:white;
+
+    font-family:Arial, sans-serif;
+
+    min-height:100vh;
+}
+
+/* CHAT CONTAINER */
+
+.chat-container{
+
+    width:500px;
+
+    margin:50px auto;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+}
+
+/* ÁREA CHAT */
+
+#chat{
+
+    height:400px;
+
+    overflow-y:auto;
+
+    margin-bottom:20px;
+}
+
+
+.bot,
+.user{
+
+    padding:10px;
+
+    margin:10px 0;
+
+    border-radius:10px;
+}
+
+.bot{
+
+    background:#22c55e;
+}
+
+
+.user{
+
+    background:#3b82f6;
+
+    text-align:right;
+}
+
+.input-area{
+
+    display:flex;
+
+    gap:10px;
+}
+
+
+input{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+}
+
+
+button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#22c55e;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+
+    transform:scale(1.05);
+}
+
+
+@media(max-width:768px){
+
+    .chat-container{
+
+        width:90%;
+    }
+}
+
+.top-bar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+
+.exit-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ef4444,
+        #dc2626
+    );
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+    box-shadow:
+    0 0 10px rgba(239,68,68,0.4);
+}
+
+
+
+.exit-btn:hover{
+
+    transform:
+    translateY(-3px)
+    scale(1.03);
+
+    box-shadow:
+    0 0 20px rgba(239,68,68,0.7);
+}
+
+
+.exit-btn:active{
+
+    transform:scale(0.97);
+}
+
+
+/* Compatibilidade mobile */
+
+
+@media(max-width:768px){
+
+    .chat-container{
+
+        width:95%;
+
+        margin:20px auto;
+
+        padding:15px;
+    }
+
+    #chat{
+
+        height:350px;
+    }
+
+    .input-area{
+
+        flex-direction:column;
+    }
+
+    input{
+
+        width:100%;
+    }
+
+    button{
+
+        width:100%;
+    }
+
+    .bot,
+    .user{
+
+        max-width:100%;
+    }
+
+    .top-bar{
+
+        flex-direction:column;
+
+        gap:10px;
+    }
+
+    .exit-btn{
+
+        width:100%;
+
+        text-align:center;
+    }
+}
