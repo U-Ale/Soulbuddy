@@ -1,0 +1,46 @@
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 50px;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+
+    color:#22c55e;
+
+    text-shadow:
+    0 0 10px #22c55e,
+    0 0 20px #22c55e;
+}
+
+.menu{
+
+    display:flex;
+
+    gap:20px;
+
+    list-style:none;
+}
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.menu a:hover{
+
+    color:#22c55e;
+}
